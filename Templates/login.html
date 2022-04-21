@@ -1,0 +1,27 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" href="{{  url_for('static',filename='rishul.css')}}" rel="stylesheet">
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="post" action="/login_validation">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="name" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="password" id="Pass" placeholder="Password">    
+        <br><br>    
+        <button type="submit" name="log" id="log">Log In Here</button>    
+        <br><br>    
+          
+    </form>     
+</div>    
+</body>    
+</html>  
