@@ -22,10 +22,9 @@
         </div>
         <ul>
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact US</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Feedback</a></li>
+            
+            <li><a href="/login">Login</a></li>
+            <li><a href="/cources">Courses</a></li>
             <li><a href="/adminlogin">Admin Login</a></li>
         </ul>
     </nav>
@@ -47,12 +46,10 @@
                
                 
                 <div>
-                    <button type="button" class="btn1"><a href="/cources" target="_blank">Courses</a></button>
-                    <button type="button" class="btn2"><a href="/login" target="_blank">Login  </a></button>
+                    <span id="inter-1">Are you Tech enthusiastic?</span>
+                    <button onclick="alertF()" type="button" class="btn1">Yes</button>
+                    <button type="button" class="btn2"><a href="/cources">Let`s Explore </a></button>
                 </div>
-                <span id="inter-1">Do you like Playing guitar ?</span>
-                <button type="button" class="btnyes"><a href="#"target="_blank">Yes</a></button>
-                <button type="button" class="btnno"><a href="#" target="_blank">I want to learn  </a></button>
                 
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -75,6 +72,13 @@
     </div>
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script>
+        function alertF(){
+            alert("Ohh Thats great!!");
+        }
+
+        alertF();
+    </script>
     
     
 </body>

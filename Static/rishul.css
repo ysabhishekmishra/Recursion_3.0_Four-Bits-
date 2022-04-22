@@ -110,17 +110,24 @@ label{
       align-items: center;
       height: 20vh;
       margin-bottom: 50px;
+      font-size: 1.5rem;
 
   }
 
-  .data{
+  .data {
       height: 15vh;
       width: 200px;
       background-color: #fff9d5;
       border: 2px solid #fddb04;
       margin: 10px 40px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-size: 1.4rem;
+  }
+
+  .data p{
+    font-size: 1rem;
   }
   
