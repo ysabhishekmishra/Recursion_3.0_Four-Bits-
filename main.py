@@ -20,6 +20,34 @@ def cources():
 def login():
     return render_template("login.html")
 
+@app.route('/adminlogin')
+def Admin_login():
+    return render_template("Admin.html")
+
+@app.route('/adminlogin_validation',methods=['POST'])
+def adminlogin_validation():
+    email=request.form.get('name')
+    password=request.form.get('password')
+
+    cursor.execute("""SELECT * FROM admindata Where email Like '{}' and password like '{}'""".format(email,password))
+    userdata=cursor.fetchall()
+    
+
+    if len(userdata)>0:
+        session['session_no']=userdata
+        return render_template('adminlandpage.html',data=userdata)
+    else:
+        return redirect('/adminlogin') 
+
+
+@app.route('/order')
+def order():
+    if 'session_no' in session:
+        return render_template("order.html")
+    else:
+        return redirect('/login')
+
+
 @app.route('/login_validation',methods=['POST'])
 def login_validation():
     email=request.form.get('name')
@@ -30,11 +58,16 @@ def login_validation():
     
 
     if len(userdata)>0:
-        session['no']=userdata
+        session['session_no']=userdata
         return redirect('/order')
     else:
         return redirect('/login') 
 
+
+@app.route('/logout')
+def logout():
+    session.pop('session_no')
+    return redirect('/')
 
 if __name__=='__main__':
     app.run(debug=True)

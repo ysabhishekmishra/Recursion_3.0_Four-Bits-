@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,600&family=Roboto:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #fcfcfc;
+    font-family:'Montserrat', sans-serif;
+}
+.main-bar{
+    background-color: #242424 !important;
+    display: flow-root;
+    padding: 0 10%;
+}
+#check{
+    display: none;
+}
+.logo-header{
+    display: table;
+    float: left;
+    vertical-align: middle;
+    padding: 0;
+    color: aliceblue;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 180px;
+    height: 68px;
+    position: relative;
+    z-index: 9;
+    transition:  all 0.5s;
+    -moz-transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -o-transition:  all 0.5s;
+}
+
+.logo-header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: -50px;
+    width: 80%;
+    transform: skew(30deg);
+    background-color: #ffe10a;
+}
+.logo-header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: 10%;
+    width: 2000px;
+    background-color: #ffe10a;
+}
+
+.logo-header a{
+    color: #22272b;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+
+} 
+
+
+ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    border-radius: 14px;
+
+}
+
+nav li.active a{
+    color: #020101;
+    background-color: #fddb04;
+    border-radius: 14px;
+}
+
+nav li a{
+    padding: 10px 20px;
+    margin: 5px;
+    border: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 14px;
+}
+
+nav li:hover a{
+    color: #020101;
+    background-color: #fddb0d;
+    border-radius: 14px;
+}
+
+.sec-1{
+    width: 100%;
+    height: 90vh;
+    background-color: #929292;
+    display: flex;
+}
+
+.left-sec{
+width: 50vw;
+height: 100%;
+background-color: rgb(255, 255, 255);
+}
+
+.right-sec{
+    width: 50vw;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.right-sec .box1{
+    width: 40vw;
+    height: 15vw;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 5px;
+}
+.right-sec .box1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    height: 100px;
+    
+    background: #ffffff;
+    padding: 20px 0; 
+    display: flex;
+    
+    justify-content: flex-end;
+    
+   
+}
+
+.btn button{
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}

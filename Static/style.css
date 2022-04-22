@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400;1,600&family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     background-color: white;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .main-bar{
     background-color: rgb(24, 24, 24) !important;
@@ -138,13 +141,45 @@ h1.hedtex{
   font-weight: 800;
   position: relative;
   top: 0;
-  animation: slide 5s steps(1) infinite;
+  animation: slide 5s steps(2) infinite;
 }
 
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
   line-height: 60px;
+}
+
+#inter-1{
+    font-size: 1.5rem;
+   position: absolute;
+   top: 500px;
+   left: 140px;
+}
+
+.btnyes{
+position: relative;
+left: 500px;
+top: 80px;
+color:black;
+border: 1px solid;
+border-radius: 10px;
+border-color: black;
+width: 80px;
+padding: 10px;
+
+}
+.btnno{
+position: relative;
+left: 600px;
+top: 35px;
+color:black;
+border: 1px solid;
+border-radius: 10px;
+border-color: black;
+
+width: 150px;
+padding: 10px;
 }
 
 
@@ -162,6 +197,7 @@ h1.hedtex{
   border-color: black;
   margin-top: 10px;
   margin-right: 50px;
+  width: 150px;
   margin-left: 450px;
   padding: 10px 10px 10px 10px;
 }
@@ -177,6 +213,7 @@ h1.hedtex{
   background:transparent;
   color:black;
   border:solid;
+  width: 150px;
   border-color: black;
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
@@ -212,6 +249,7 @@ h1.hedtex{
     border-radius: 4px;
     padding: 20px;
     transition: all .3s ease-in;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -220,11 +258,25 @@ h1.hedtex{
     padding: 10px;
 }
 
+#buynow{
+    background-color: #fddb04;
+    color: #020101;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#buynow:hover{
+    background-color: #171717;
+    color: #fddb04;
+}
+
 .card .card-title{
-    padding: 20px 10px;
+    padding: 0px 10px;
+    margin: 20px 0;
     font-size: 1.5rem;
     text-transform: uppercase;
     text-shadow: 1px 0px 2px #262654;
+    border-bottom: #fddb04 2px solid;
 }
 
 
@@ -232,19 +284,24 @@ h1.hedtex{
 .card .card-text{
     line-height: 20px;
     font-size: 400;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.8rem;
 }
 
 
 .header h1{
     margin-top: 29px;
     width: 290px;
-    margin-left: 150px;
+    margin-left: 210px;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
     color: black;
     text-align: center;
     justify-content: center;
     font-weight: 300;
+    font-family: 'Poppins', sans-serif;
     
     
 }

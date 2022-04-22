@@ -1,0 +1,49 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Admin Login</title>    
+    <link rel="stylesheet" href="{{  url_for('static',filename='rishul.css')}}" rel="stylesheet">
+</head>    
+<body>    
+    <h2>Welcome {{data[0][1]}}</h2><br> 
+    <section class="dashboard">
+        <div class="data">
+            2000
+        </div>
+        <div  class="data">
+            400
+        </div>
+        <div  class="data">
+            1600
+        </div>
+    </section>
+    <section class="section3">
+        <div class="sec-head" >
+          <p>Analysis Record of funnel Website</p>
+        </div>
+        <div class="graph-1" >
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="//plotly.com/~hrishi332/38.embed"></iframe>
+        </div>
+    </section>
+    
+    <section class="section3">
+        <div class="sec-head" >
+          <p>User Interaction Record</p>
+        </div>
+        <div class="graph-1" >
+            <iframe id="igraph" scrolling="no" style="border:none;" 
+            seamless="seamless" src="https://plotly.com/~hrishi332/42.embed?link=false&logo=false" height="100%" width="100%"></iframe>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="sec-head" >
+          <p>User Interaction Funnel</p>
+        </div>
+        <div class="graph-1" >
+            <iframe id="igraph" scrolling="no" style="border:none;" 
+            seamless="seamless" src="//plotly.com/~hrishi332/45.embed?link=false&logo=false"" height="100%" width="100%"></iframe>
+        </div>
+    </section>
+      
+</body>    
+</html>  
